@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../js/login.js"></script>
 		<link href="../css/register.css" rel="stylesheet" type="text/css"/>
 		<link href="../css/footer.css"  rel="stylesheet" type="text/css"/>
 	    <script>
@@ -11,8 +12,9 @@
 	    		$('<div/>').load('footer2.html',function(){
 				$(this).insertAfter('.register');
 			  });
-	    	});
-	    </script>
+
+      })
+	   </script>
 	</head>
 	<body>
 		<div class="register">
@@ -37,13 +39,7 @@
                        	  		<input name="userPwd" id="userPwd" type="password" value=""/>
                        	  	</li>
                        	 
-                       	  	<li>
-                       	  		<span>验证码：</span>
-                       	  		
-                       	  		<input name="yzm" id="yzm" class="yzm" type="text"/>
-                       	  		<div class="yzmNmu">3456</div>
-                       	  		
-                       	  	</li>
+                       	  	
                        	  	
                        	  </ul>
                        </div>
@@ -54,7 +50,7 @@
                        <div class="tk">
 	  
 	                       <p>
-	                       	 <span></span>
+	                       	 <input type="checkbox" id="auto_login" />
 	                       	 下次自动登录
 	                       	 <i>忘记密码</i>
 	                       </p>

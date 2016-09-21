@@ -1,5 +1,6 @@
 $(function(){
 	//校验用户名
+	var flag;
 	$('#username').blur(function(){
 		var value=$(this).val();
 		var telReg=/^1\d{10}$/;
@@ -9,15 +10,19 @@ $(function(){
 		if(value==''){
 			$user_check.css('display','block');
 			$user_info.html('用户名不能为空');
+			flag=false;
 		}else if(telReg.test(value)){
 			$user_check.css('display','block');
 			$user_info.html('手机号正确');
+			flag=true;
 		}else if(emailReg.test(value)){
 			$user_check.css('display','block');
 			$user_info.html('邮箱正确!');
+			flag=true;
 		}else{
 			$user_check.css('display','block');
 			$user_info.html('请输入正确的邮箱或手机号！');
+			flag=false;
 		}
 	})
 	//校验密码
@@ -32,7 +37,9 @@ $(function(){
 		if(value==''){
 			$pwd_info.html('密码不能为空');
 			$pwd_check.css('display','block');
+			flag=false;
 		}else if(pwdReg.test(value)){
+			flag=true;
 			$pwd_info.html('');
 			$pwd_check.css('display','block');
 			if(length>=6&&length<=9){
@@ -52,6 +59,7 @@ $(function(){
 		}else{
 			$pwd_info.html('密码长度不能少于六位');
 			$pwd_check.css('display','block');
+			flag=false;
 		}
 
 	});
@@ -66,12 +74,15 @@ $(function(){
 		if(pwd2==''){
 			$rePwd_info.html('请确认密码');
 			$rePwd_check.css('display','block');
+			flag=false;
 		}else if(pwd1!=pwd2){
 			$rePwd_info.html('两次输入的密码不一致！');
 			$rePwd_check.css('display','block');
+			flag=false;
 		}else if(pwd1==pwd2){
 			$rePwd_info.html('');
 			$rePwd_check.css('display','none');
+			flag=true;
 		}
 	});
 	//产生验证码
@@ -89,12 +100,25 @@ $(function(){
 		if(value==''){
 			$code_check.css('display','block');
 			$code_info.html('验证码不能为空！');
+			flag=false;
 		}else if(value==num){
 			$code_check.css('display','none');
 			$code_info.html('');
+			flag=true;
 		}else{
 			$code_check.css('display','block');
 			$code_info.html('您输入的验证码不正确！');
+			flag=false;
 		}
-	})
+	});
+    
+    var $register_btn=$('.register_btn');
+    $register_btn.click(function(){
+    	if(flag==true){
+		 alert('注册成功！');
+	   }if(flag==false){
+		 alert('注册失败！');
+	   }
+    });
+	
 })
