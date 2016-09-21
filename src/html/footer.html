@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <link href="../css/footer.css" rel="stylesheet" type="text/css"/>
+	    <script src="../js/jquery-1.12.0.js"></script>
+	    <script>
+	    	$(function(){
+	    		var $div1=$('.div1');
+	    		var $theSlider=$('.theSlider');
+	    		var $logoList=$('.logoList');
+	    		var $activitiesList=$('.activitiesList');
+	    		var $shade=$('.shade');
+	    		$div1.on('click','span',function(){
+	    			var left=$(this).offset().left-172;
+	    			
+	    			$theSlider.css('left',left);
+	    			
+	    		});
+	    		$logoList.on('mouseover','img',function(){
+	    			var imgLeft=$(this).offset().left;
+	    			var imgTop=$(this).offset().top;
+	    			console.log('进入');
+	    		   // console.log(imgTop);
+	    		   $shade.css({
+	    		   	 left:imgLeft,
+	    		   	 top:imgTop
+	    		   }).show();
+	    		});
+	    		
+
+	    	})
+	    </script>
+	</head>
+	<body>
+		 <div class="activitiesList">
+                    <h3><span class="spanLeft"></span><span class="spanTitle">活动即将开始</span><span class="spanRight"></span></h3>
+                    <div class="activitiesHeader">
+                        <div class="div1">
+	                               <span class="activitiesWeek">明天</span>
+	                               <span class="activitiesWeek">周六</span>
+	                               <span class="activitiesWeek">周日</span>
+	                               <span class="activitiesWeek">周一</span>
+	                               <span class="activitiesWeek">周二</span>
+                        </div>
+                        <div class="theSlider"></div>
+                    </div>
+                    
+                     <div class="activitiesContent" >
+                        <div class="activitiesHeader1">
+                            <div class="div2">早上<span>0</span>点上新</div>
+                        </div>
+                        
+                        	
+                      <div class="logoList">
+                        	<img src="../css/img/ft1.jpg" />
+                        	<img src="../css/img/ft2.jpg" />
+                        	<img class='no' src="../css/img/ft3.jpg" />
+                        	<img src="../css/img/ft1.jpg" />
+                        	<img src="../css/img/ft2.jpg" />
+                        	<img class='no' src="../css/img/ft3.jpg" />
+                        </div>  
+                    </div>
+                             
+         </div>
+         <div class="footer_container">
+         	<div class="advantage">
+                <ul>
+                <li><a class="a1" href="">100%品牌授权正品</a></li>
+                    <li><a class="a2" href="">满688免运费</a></li>
+                    <li><a class="a3" href="">7天无条件退货</a></li>
+                    <li><a class="a4" href="">超值折扣</a></li>
+                    <li><a class="a5"  href="">9点限时闪购</a></li>
+                    <li class="no_right"><a class="a6" href="">400－664－6698</a></li>
+                </ul>
+            </div>
+             <p class="link">
+                <a  href="">关于魅力惠</a>
+                <a href="">加入我们</a>
+                <a href="">联系我们</a>
+                
+                <a href="">使用帮助</a>
+                <a href="">使用规则</a>
+                <a href="">隐私声明</a>
+                <a href="">网站地图</a>
+            </p>
+            <p class="copyright">
+            	<span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有</span>浙ICP备16004860号-1
+            </p>
+            <p class="footer_logo">
+            	<span><img src="../css/img/ftoot1.png" width="35" height="36"></span>
+            	<i><img src="../css/img/ftoot2.png" width="105" height="35"></i>
+            </p>
+
+
+         </div>
+
+         <div class="shade">
+         	<div class="logo_order">
+         	   <div class="order_box">
+         		<a>预览</a>
+         		<span>|</span>
+         		<a>订阅</a>
+         	   </div>
+         	</div>
+         </div>
+	
+</html>

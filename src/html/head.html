@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/head.css" rel="stylesheet" type="text/css"/>
+		<script src="../js/jquery-1.12.0.js"></script>
+	    <style>
+	    	.red{color:red;}
+	    </style>
+	    <script>
+	      $(function(){
+	      	//二级菜单跟随一级菜单移动效果
+	      	var $subMenu=$('.subMenu');
+	      	$('.nav_container').on('mouseover','a',function(){
+	      	
+	      		var $left=$(this).offset().left;
+	      		$subMenu.css({
+	      			left:$left,
+	      			display:'block'
+	      		});
+	      	  
+	      	}).on('mouseout','a',function(){
+	      		$subMenu.css('display','none');
+	      	});
+	      	
+	      	//切换页面导航选项也随着变色
+	      	$('.header_menu .nav').click(function(){
+	      		 var idx = $(this).index();
+
+                $('.header_menu .nav').removeClass('red').eq(idx).addClass('red');
+
+	      	});
+	      	
+	      });
+	    </script>
+	</head>
+	<body>
+		<div class="header">
+			 <div class="content"> 
+			 	<div class="content_left">
+			 		<ul id="ul_header">
+			 			<li class="theLi">
+			 				<img class="youli" src="../css/img/zhuceyouli.gif"/>
+			 				<a href="register.html" style="color:red;">注册有礼</a>
+			 			</li>
+			 			<li class="theLi">
+			 				<span>|</span>
+			 			</li>
+			 			<li class="theLi">
+			 				<a href="login.html">登录</a>
+			 			</li>
+			 			<li class="theLi">
+			 				<span>|</span>
+			 			</li>
+			 			<li>
+			 				<a>收藏</a>
+			 			</li>
+			 		</ul>
+			 		
+			 	</div>
+			 	<div class="content_right">
+			 			  <ul>
+                                <li>
+                                    <a>在线咨询</a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <a>手机版</a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <a>新浪微博</a>
+                                </li>
+                            </ul>
+
+			 			
+			 		</div>
+			 </div>
+			<div class="branner">
+                <a href="../index.html"><img src="../css/img/banner.jpg" /></a>
+            </div>
+
+		</div>
+	    <!--导航栏-->
+	    <div class="nav_container">
+	     <div class="nav-right">
+          <div class="header_menu">
+             <ul>
+                <li>
+                    <a class="nav" href="index.html" style="color: red;" >首页</a>
+                </li>
+                <li>
+                    <a class="nav">女士</a>
+                </li>
+                <li>
+                    <a class="nav" href="detail.html">男士</a>
+                </li>
+                <li>
+                    <a class="nav" href="shop_cart.html">美妆</a>
+                </li>
+                <li>
+                    <a class="nav">家居</a>
+                </li>
+                <li>
+                    <a class="nav">婴童</a>
+                </li>
+                <li>
+                    <a class="nav">老佛爷奥莱</a>
+                </li>
+                <li>
+                    <a>即将推出</a>
+                </li>
+             </ul>
+          </div>
+          
+            <div class="shopping_bag">
+                <ul>
+                    <li class="shopping_quantity">0</li>
+                    <li>|</li>
+                    <li>¥ 0.00</li>
+                </ul>
+            </div>
+
+         </div>
+         
+         <!--二级菜单-->
+	   <div class="subMenu" style="display: none;">
+                            
+            <div class="sub">
+                <p class="title">热门活动</p>
+                <ul>
+                   <li><a href="">TORY BURCH&nbsp;舒适平跟女鞋</a></li>
+                   <li><a href="">TORY BURCH&nbsp;赴约搭配包袋配饰</a></li>
+                   <li><a href="">TORY BURCH&nbsp;秋日中高跟女鞋</a></li>
+                   <li><a href="">TORY BURCH&nbsp;露趾时尚女鞋</a></li>
+                   <li><a href="">TORY BURCH&nbsp;华美优雅女装系列</a></li>
+                   <li><a href="">LOVE MOSCHINO &nbsp;女士秋冬上装及连衣裙专场</a></li>
+                   <li><a href="">LOVE MOSCHINO&nbsp;女士秋冬外套及下装专场</a></li>
+                   <li><a href="">JUST CAVALLI&nbsp;风情印花女士</a></li>
+                </ul>
+                <p class="more"><a  href="" >查看所有活动</a></p>
+            </div>
+              <div class="sub">
+                <p class="title">商品分类</p>
+                <ul class="sub_ul">
+                   <li><a href="">配饰</a></li>
+                   <li><a href="">服装</a></li>
+                   <li><a href="">鞋履</a></li>
+                   <li><a href="">包袋</a></li>
+                   <li><a href="">眼镜</a></li>
+                   <li><a href="">手表&首饰</a></li>
+                </ul>
+            </div>
+            
+        </div>
+                        
+                    
+         
+         
+	  </div>
+	  
+      
+	</body>
+</html>

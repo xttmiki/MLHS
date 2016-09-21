@@ -1,0 +1,37 @@
+*{padding:0;margin:0;}
+.header{width:100%;height:120px;margin:0 auto;position:relative;overflow:visible;z-index:10}
+.content{width:100%;height:30px;background:#f2f2f2;}
+.header .content_left{padding-left:170px;height:30px;line-height:30px;float:left;}
+.header .content_left ul{list-style:none;text-align:center;width:250px;}
+.header .content_left ul .theLi{float:left;height:30px;padding:0 6px 0 0}
+.header .content_left ul .theLi span{margin:0 14px}
+.header .content_left ul a{text-decoration:none;font-size:14px;}
+.header .content_left ul a:hover{color:red;cursor:pointer;}
+.header .content_right{height:30px;line-height:30px;float:right;padding:0 80px 0 0;}
+.header .content_right ul{width:300px;list-style:none;text-align:center;padding-right:180px}
+.header .content_right ul li{float:left;height:30px;line-height:30px;padding:0 0 0 20px}
+.header .content_right ul li a{font-size:14px;text-decoration:none;}
+.header .content_right ul a:hover{color:red;cursor:pointer;}
+.branner{padding-left:165px;}
+/*导航条菜单*/
+.nav_container{position:relative;width:100%;height:42px;background-color:#000;float:left;}
+.header_menu{width:1000px;height:42px;position:relative;z-index:8;}
+.header_menu ul li{list-style:none;float:left;height:42px;margin-right:50px}
+.header_menu ul li .nav{display:block;width:auto;height:42px;line-height:42px;float:left;white-space:nowrap;color:#fff;font-size:14px}
+.header_menu ul li .nav:link{text-decoration: none;}
+.header_menu ul li .nav:hover{color:#db2726;cursor: pointer;}
+.header_menu ul li .nav:active{color:red}
+.nav-right{width:1000px;height:42px;margin:0 auto;position:relative;z-index:9;}
+.shopping_bag{height:42px;color:#fff;padding:0 15px 0 0;position:absolute;bottom:0;right:0;cursor:pointer;z-index:10}
+.shopping_bag ul li{list-style:none;float:left;margin-left:15px;font-size:14px;height:42px;line-height:42px;font-weight:bold;font-size:16px;}
+.shopping_bag ul .shopping_quantity{margin-left:0;color:#a8a8a8;font-size:12px;width:23px;text-align:center;line-height:45px;background:url(img/shop-bag.jpg) no-repeat 0 8px;}
+/*二级菜单*/
+.subMenu{width:630px;height:auto;overflow:hidden;-moz-box-shadow:0 1px 6px #999;-webkit-box-shadow:0 1px 6px #999;box-shadow:0 1px 6px #999;background-color:#fff;background-position:315px 0;position:absolute;left:0;top:42px;_top:39px;z-index:99;display:none;filter:progid:DXImageTransform.Microsoft.Shadow(color='#cccccc',Direction=90,Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#cccccc',Direction=180,Strength=3) progid:DXImageTransform.Microsoft.Shadow(color='#cccccc',Direction=270,Strength=3)}
+/*.subMenu{width:634px;height:auto;}*/
+.subMenu ul li{list-style: none;}
+.subMenu ul li a,.more a{text-decoration: none;font-size: 10px;color: grey;}
+.subMenu ul li a:hover,.more a:hover{color:#db2726;}
+.sub{width:274px;height:auto;overflow:hidden;float:left;padding:0 20px 0 20px;position:relative;border-right:1px #e7e7e7 solid;margin-top:10px;margin-bottom:10px}
+.title{width:100%;height:44px;line-height:44px;font-size:14px;font-weight:bold;border-bottom:1px solid #e7e7e7;text-align:left}
+.sub ul li{float:none;width:100%;height:auto;overflow:hidden;line-height:15px;white-space:normal;text-align:left;margin-top:10px;margin-right:0}
+.more{width:285px;height:auto;padding-right:15px;text-align: right;margin-top:30px;}

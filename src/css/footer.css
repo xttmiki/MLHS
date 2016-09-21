@@ -1,0 +1,61 @@
+*{padding:0;margin:0;}
+/*尾部样式*/
+.activitiesList{margin-top:60px;width:1000px;;height:auto;overflow:hidden;padding-left:172px;margin-bottom:15px;}
+.activitiesList h3{margin-bottom:20px;height:28px;}
+.spanLeft{width:6px;height:28px;float:left;background:url(img/zkh.png) no-repeat left top;}
+.spanRight{width:6px;height:28px;float:left;background:url(img/zkh.png) no-repeat right top;}
+.spanTitle{display:block;height:28px;line-height:26px;float:left;padding:0 10px}
+.activitiesHeader{width:1000px;height:25px;overflow:hidden;font-size:14px;position:relative}
+.activitiesList .activitiesHeader .div1{float:left;height:16px;line-height:16px;border-left:1px solid #000}
+.activitiesList .activitiesHeader .div1 span{display:block;height:16px;line-height:16px;float:left;width:89px;text-align:center;cursor:pointer;border-right:1px solid #000}
+.theSlider{width:90px;height:4px;overflow:hidden;background-color:#000;position:absolute;bottom:0;left:0}
+.activitiesList .activitiesContent{width:1020px;height:auto;padding-top:9px}
+.activitiesList .activitiesHeader1{width:1000px;height:1px;font-size:14px;position:relative;z-index:1}
+.activitiesList .activitiesHeader1 .div2{height:27px;position:absolute;right:0;top:-36px}
+.activitiesList .activitiesHeader1 .div2 span{font-size:27px;color:#db2726;font-family:Constantia;position:relative;}
+.logoList img{margin-right:10px;margin-bottom:18px;}
+.logoList no{margin-right:0px;}
+/*遮罩层*/
+.shade{text-align:center;line-height:90px;display:none;width:320px;height:90px;background-color:#494949;opacity: 0.8;filter:alpha(opacity=80);position: absolute;left:0;top:0;}
+.logo_order{position:relative;margin:25px 91px;width:138px;height:40px;background:red;}
+.order_box{padding:8px 15px;position: absolute;left:0;top:0;width:108px;height:24px;}
+.order_box span,.order_box a{color:white;display:block;width:32px;height:24px;line-height:24px;float: left;font-size:12px}
+.order_box a:hover{text-decoration: underline;cursor:pointer;}
+/*底部样式*/
+.footer_container{width:100%;height:235px;position:relative;margin:0 auto;z-index:6}
+.footer_container .advantage{margin-left:172px;padding-top:34px;}
+.footer_container .advantage ul{list-style: none;width:1000px;height:64px}
+.footer_container .advantage ul li{width:162px;height:64px;float: left;border-right:1px solid #777;text-align: center;}
+.footer_container .advantage ul li a{display:block;width:162px;height:64px;overflow:hidden;line-height:95px;text-align:center;color:#000;text-decoration: none;font-size:12px;}
+.footer_container .advantage ul .no_right{border-right:none;}
+/*经过图标变色*/
+.advantage ul li .a1,.advantage ul li .a1:hover,
+.advantage ul li .a2,.advantage ul li .a2:hover,
+.advantage ul li .a3,.advantage ul li .a3:hover,
+.advantage ul li .a4,.advantage ul li .a4:hover,
+.advantage ul li .a5,.advantage ul li .a5:hover,
+.advantage ul li .a6,.advantage ul li .a6:hover{background:url(img/totalImg.png)}
+.advantage ul li .a1{background-position:-153px -146px}
+.advantage ul li .a1:hover{background-position:-153px -264px}
+.advantage ul li .a2{background-position:-543px -104px}
+.advantage ul li .a2:hover{background-position:-543px 7px}
+.advantage ul li .a3{background-position:-150px -382px}
+.advantage ul li .a3:hover{background-position:-301px -229px}
+.advantage ul li .a4{background-position:-419px 5px}
+.advantage ul li .a4:hover{background-position:-419px -107px}
+.advantage ul li .a5{background-position:-301px -346px}
+.advantage ul li .a5:hover{background-position:-301px -459px}
+.advantage ul li .a6{background-position:-301px -112px}
+.advantage ul li .a6:hover{background-position:-301px 5px}
+
+.footer_container{background: #F2F2F2;}
+.footer_container .link{margin-bottom:20px;margin-left:390px;margin-top:20px;}
+.footer_container .link a{margin-right:30px;color:#000;font-size:10px;display: inline-block;text-decoration: none;width:60px;height:15px;}
+.copyright{text-align: center;margin-top:20px;font-size:12px;}
+.link a:hover{color:red;}
+.copyright span{margin-right:30px !important;}
+.footer_logo{text-align: center;height:130px;margin-top:20px;width:160px;margin-left:590px;}
+.footer_logo span{margin-right:20px !important;display: block;width:35px;height:36px;text-align: center;}
+.footer_logo i{width:105px;height:35px;}
+.footer_logo span,.footer_logo i{float: left;}
+

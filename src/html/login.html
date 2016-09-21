@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.12.0.js"></script>
+		<link href="../css/register.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/footer.css"  rel="stylesheet" type="text/css"/>
+	    <script>
+	    	$(function(){
+	    		$('<div/>').load('footer2.html',function(){
+				$(this).insertAfter('.register');
+			  });
+	    	});
+	    </script>
+	</head>
+	<body>
+		<div class="register">
+			 
+			 <div class="register_container">
+			 	 <div class="register_logo"></div>
+                 <div class="register_content">
+                 	<div class="login_form">
+                 	   <div class="free_regsiter">
+                        <h2>会员登录</h2>
+                        <span data-spm="2028705">没有帐号吗？<a href="register.html">免费注册</a></span>
+                       </div>
+              
+                       <div class="login_info">
+                       	  <ul>
+                       	  	<li>
+                       	  		<span>帐户名：</span>
+                       	  		<input name="userAccount" id="userAccount" type="text" placeholder="已验证手机号/邮箱"/>
+                       	  	</li>
+                       	  	<li>
+                       	  		<span>密码：</span>
+                       	  		<input name="userPwd" id="userPwd" type="password" value=""/>
+                       	  	</li>
+                       	 
+                       	  	<li>
+                       	  		<span>验证码：</span>
+                       	  		<input name="yzm" id="yzm" class="yzm" type="text"/>
+                       	  		<input name="yzmPic" id="yzmPic" class="yzmPic"/>
+                       	  	</li>
+                       	  	
+                       	  </ul>
+                       </div>
+                       <div class="login_btn">
+                       	 <a>会员登录</a>
+                       </div>
+                       <div style="clear: both;"></div>
+                       <div class="tk">
+	  
+	                       <p>
+	                       	 <span></span>
+	                       	 下次自动登录
+	                       	 <i>忘记密码</i>
+	                       </p>
+	                   </div>
+	                   <div style="clear: both;"></div>
+	                   <div class="user_login">
+		                    <span>联名登录：</span>
+		                    <a href="#" class="weibo"></a>
+		                	<a href="#" class="zhifubao"></a>
+                      </div>
+
+	                   <div class="xt"></div>
+	                   <div class="ewm">
+	                   	 <img src="../css/img/wechat.jpg" />
+	                   	  <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+	                   </div>
+                 	</div>
+                 </div>
+
+			 	
+			 </div>
+			 
+		</div>
+	</body>
+</html>

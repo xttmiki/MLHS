@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../js/product_detail.js"></script>
+		<script src="../js/jquery.daojishi.js"></script>
+		<link href="../css/head.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/footer.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/detail.css" rel="stylesheet" type="text/css"/>
+	    <script>
+	    	$(function(){
+	    	 $('<div/>').load('head.html',function(){
+				$(this).insertBefore('.detail_content');
+			   });
+			   $('<div/>').load('footer2.html',function(){
+				$(this).insertAfter('.info');
+			   });
+			   
+			   //展开详情
+			   var $status=$('.status');
+			   $status.on('click',function(){
+			   	  
+			   	   var $notice_second=$('.notice_second');
+			   	   if(($notice_second).is(':visible')){
+			   	   	  $notice_second.slideUp(200);
+			   	   	  $status.html('展开');
+			   	   }else{
+			   	   	  $notice_second.slideDown(200);
+			   	   	  $status.html('收缩');
+			   	   }
+			   	   
+			   });
+
+	    	});
+	    </script>
+	</head>
+	<body>
+		<div style="clear: both;"></div>
+		<div class="main">
+		<div class="detail_content">
+			<div class="datail_title">
+				<span>首页 > 女士 > TROY BURCH / 深蓝色花朵珠片装饰手提肩包  - 商品代码 ：TWE-403-00051</span>
+				
+			</div>
+			<div class="detail_main"> 
+				<div class="detail_left">
+					<!--大图片-->
+					
+				   <div class="pic_area">
+					<img src="../img/small1.jpg" class="bigpic"/>
+					
+					<div class="showBigPic">
+						<img src="../img/small1.jpg">
+					</div>
+					<div class="pop"></div>
+					<div class="dragPop"></div>
+				  </div>
+				 <!--大图片-->
+					<div class="small_img">
+						<a class="pageLeft">
+							<img src="../css/img/banner-left.png" />
+						</a>
+						<div class="pro_box">
+						<ul class="pro_ul">
+							<li><a><img src="../img/small1.jpg"/></a></li>
+							<li><a><img src="../img/small2.jpg"/></a></li>
+							<li><a><img src="../img/small3.jpg"/></a></li>
+							<li><a><img src="../img/small4.jpg"/></a></li>
+							<li><a><img src="../img/small1.jpg"/></a></li>
+						</ul>
+						</div>
+						<a class="pageRight">
+							<img src="../css/img/banner-right.png" />
+						</a>
+					</div>
+				</div>
+				
+				
+			</div>
+				
+				<div class="detail_right">
+					<div class="detail_logo">
+						TROY BURCH
+					</div>
+					<div class="name">深蓝色花朵珠片装饰手提肩包</div>
+				    <div class="detail_price">
+				    	<div class="xj">￥2,690</div>
+				    	<div class="yj">￥5,380</div>	
+				    	<div class="discount">5<span style="font-size: 14px;font-weight: 400;">折</span></div>
+				    </div>
+				    <!--公告信息-->
+					    <div class="notice">
+					        <div class="notice_content" id="shousuo">
+					            <!--多条促销信息-->
+					            <div class="notice_unfold">
+					                <a id="status" class="status" href="###">展开</a>
+					                <span>共<strong>	2</strong>项，</span>
+					            </div>
+		                        <div class="notice_first">
+		                            <span>9/16-9/18期间，购全场任意商品（海外直发商品除外），结算时输入优惠码：lux916，即享满916元，减100元；满2000元，减250元；满3000元，减400元；满5000元，减800元</span>
+		                        </div>
+					     
+					            <div style="display: none;" class="notice_second">
+					                 <span>9/16-9/18期间，全场免运</span>
+					            </div>
+					        </div>
+					    </div>
+              <!--公告信息-->
+				    	<!--选择商品-->
+				    	<div class="choose">
+				    		<div class="choose_title">
+				    			颜色:<strong style="margin-left:10px;font-weight: bold;color: black;">深蓝色</strong>
+				    		</div>
+				    		<div class="choose_img">
+				    			<img src="../css/img/choose_bag.jpg" />
+				    		</div>
+				    	</div>
+				    	<!--数量-->
+				    	<div class="number">
+				    		<div class="number_wz">数量</div>
+				    		<div class="choose_number">
+				    			<span class="reduce">-</span>
+				    			<span class="sl"><input type="text" id="quantity" value="1" readonly="true"/></span>
+				    			<span class="add">+</span>
+				    	    </div>	
+				    	  </div>
+				    	<!--购买按钮-->
+				    	<div class="buy_btn">
+				    		<img src="../css/img/buy_btn.jpg" />
+				    	</div>
+				    	
+				    	<div class="time">
+				    		<span class="hd">
+				    		<strong style="margin-right: 5px;font-size: 14px;line-height: 25px;">限时抢购</strong>
+				    		<em>剩余活动</em>
+				    		</span>
+				    		<div class="djs">
+				    			
+				    		</div>
+				    	</div>	
+				    		
+				    	
+				</div>
+			</div>
+			<!--商品保养-->
+			<div style="clear: both;"></div>
+			<div class="info">
+				<!--尺寸信息-->
+				<div class="info_list">
+					<!--商品尺寸-->
+					<div class="size">
+						<div class="head">
+							<strong>SIZE INFO</strong>
+							<span>尺寸信息</span>
+						</div>
+						<div class="size_content">
+							<div class="size_title">
+								<span>单位：CM</span>
+								<a class="guide">尺码指南</a>
+							</div>
+							<div class="size_tb">
+								<div class="tb">
+									<span>包身高度</span>
+									<i>19</i>
+								</div>
+								<div class="tb">
+									<span>包面宽度</span>
+									<i>10</i>
+								</div>
+								<div class="tb">
+									<span>侧面底宽</span>
+									<i>20</i>
+								</div>
+								<div class="tb">
+									<span>包带长度</span>
+									<i>&lt;120</i>
+								</div>
+								<div class="tb">
+									<span>提把高度</span>
+									<i>19</i>
+								</div>
+								
+							</div>
+					</div>
+				 </div>
+					<!--商品信息-->
+					
+				 <div class="pro_info">
+				 	<div class="pro_title">
+				 		<strong>PRODUCT INFO</strong>
+				 		<span>商品信息</span>
+				 	</div>
+				 	<div class="des">
+				 		<p>华丽珠片装饰，花朵形状优雅充满女人味，奢华时尚品牌Tory Burch沿袭美国经典运动时装风格，展现无拘无束的活力。</p>
+				 	</div>
+				 	<div class="pro_content">
+				 		<ul>
+				 			<li>
+				 				<span>产地：</span>
+				 				<strong>印度</strong>
+				 			</li>
+				 			<li>
+				 				<span>产地：</span>
+				 				<strong>印度</strong>
+				 			</li>
+				 			<li>
+				 				<span>产地：</span>
+				 				<strong>印度</strong>
+				 			</li>
+				 			<li>
+				 				<span>产地：</span>
+				 				<strong>印度</strong>
+				 			</li>
+				 			<li>
+				 				<span>产地：</span>
+				 				<strong>印度</strong>
+				 			</li>
+				 			<li>
+				 				<span>产地：</span>
+				 				<strong>印度</strong>
+				 			</li>
+				 		</ul>
+				 	</div>
+				 </div>
+				 <!--保养-->
+				 <div class="by">
+				 	<h2>保养</h2><br/>
+				 	<ul>
+				 	  <li>、防止高温、雨淋、潮湿、重压、碰刮等；2、防霉、避免接触油污、酸性和碱性等物质；3、经常用干净柔软布抹金属配件,使其光亮如新；4、存储前应清洁皮面,上适量皮革保养剂,并放在通风保养处</li>
+				 	</ul>
+				 	<p>*图片及相关信息仅供参照，因拍摄灯光及不同显示器色差等问题可能造成商品图片与实物的色差，一切以实物为准。</p>
+				 	<p>*关于商品价格的补充说明：灰色划线价格为建议市场零售价，并非商品原价；红色标价为魅力惠实时零售价。</p>
+				 </div>
+				 <!--商品图片展览-->
+				 <div class="img_show">
+				 	<img src="../img/show1.jpg" />
+				 	<img src="../img/show2.jpg" />
+				 	<img src="../img/show3.jpg" />
+				 	<img src="../img/show4.jpg" />
+				 	<img src="../img/show5.jpg" />
+				 	<img src="../img/show6.jpg" />
+				</div>
+				<!--品牌故事-->
+				<div class="history">
+				 <h2><strong>Tory Burch</strong></h2>
+				 <div class="his_img"> 
+				   <img src="../img/show7.jpg" />
+				 </div>
+				</div>
+				<!--猜你喜欢-->
+				<div class="like">
+				 <h2 class="like_head">
+				   <strong>YOU MAY ALSO LIKE</strong>
+				   <span>猜你喜欢</span>
+				 </h2>
+				 <div class="like_img">
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/like1.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/like2.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/like3.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/like4.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				 </div>
+				</div>
+				<!--更多商品-->
+				<div class="like">
+				 <h2 class="like_head">
+				   <strong>Recommendations</strong>
+				   <span>更多商品</span>
+				 </h2>
+				 <div class="like_img">
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/more1.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/more2.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/more3.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				  <div class="like_item">
+				   <a>
+				    <img src="../img/more4.jpg" />
+				    <div class="baseinfo">
+					     <strong>OPENING CEREMONY</strong>
+					     <span>巧克力色抽带饰鳄鱼纹手提背包</span>
+					     <div class="base_price">
+					        <i>￥2503</i>
+					        <del>￥6050</del>
+					     </div>
+				    </div>
+				   </a>
+				  </div>
+				 </div>
+				</div>
+			</div>
+				
+			
+			
+		
+		</div>
+		<!--遮罩层-->
+	   <div class="hiddenBox"></div>
+	    <!--尺寸信息-->
+	    <div class="canvas">
+	    	<div class="close">X</div>
+	    	<img src="../img/canvas.png" />
+	    </div>
+	   
+	   </div>
+	  
+	   
+	</body>
+</html>

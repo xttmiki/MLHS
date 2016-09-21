@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<script src="../js/jquery-1.12.0.js"></script>
+		<link href="../css/footer.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/head.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/footer.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/shop_cart.css" rel="stylesheet" type="text/css"/>
+	    <script>
+	      $(function(){
+	        $('<div/>').load('head.html',function(){
+				$(this).insertBefore('.cart');
+			});
+			 $('<div/>').load('footer2.html',function(){
+				$(this).insertAfter('.cart');
+			});
+	      });
+	    </script>
+	
+	</head>
+	<body>
+	   <div class="cart">
+	     
+	     <h2 class="cart_title">
+	                购物袋
+        	<span>商品库存有限，建议尽快提交订单，闪购到心仪的商品；促销优惠将按比例分摊至商品中。</span>
+          </h2>
+          
+          <div class="pro_status">
+            <a class="pro_ing">在售</a>
+            <a>心愿单</a>
+            <a>已失效</a>
+          </div>
+          <div class="shop_list">
+            <!--标题-->
+          	<div class="list_title">
+          		<ul>
+                    <li style="width:400px"  class="list_name">
+                    	<h3>保税仓直发</h3>
+                    	<strong>
+                    	 <img src="../css/img/time.gif">
+                    	预计<span class="day5" style="color:red">5天</span>内发货，
+                    	<span style="color:red" class="day20">20天</span>内送达
+                        </strong>
+                    </li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>优惠</li>
+                    <li>小计</li>
+                    <li>删除</li>
+	            </ul>
+          	</div>
+          	<!--商品-->
+          	<div class="shop_content">
+          	  <ul>
+          	    <li style="width:380px;height:107px" class="content_left">
+          	      <a>
+          	       <img src="../img/bag5.jpg">
+          	      </a>
+          	      <div class="pro_title_info">
+          	      	<strong>Tory Burch</strong>
+          	      	<span>深蓝色花朵珠片装饰手提肩包</span>
+          	      </div>
+          	    </li>
+          	    <li>¥ 2690.00</li>
+          	    <li>
+                 	<div class="number_choose">
+                        <span class="number_reduce">-</span>
+                        <span class="quantity_number"><input readonly="readonly" value="1"></span>
+                        <span class="number_increase">+</span>
+                    </div>
+            	</li>
+            	<li></li>
+            	<li>¥ 2690.00</li>
+            	<li><img src="../css/img/delete.png" class="delete"/></li>
+          	  </ul>
+          	 </div> 
+          	</div>
+          	
+          	<div style="clear: both;"></div>
+          	<!--box-message-->	
+          	<div class="box1">
+          	  <div class="box2">
+          	  	已享受满688元全场免运（跨境商品除外）
+          	  </div>
+          	</div>
+          
+          	<!--结账-->
+          	
+          	  <div class="account_info"> 
+          	    <div class="youhui">
+          	    	使用优惠券
+          	    </div>
+          	    <div class="total_accont">
+          	    	总金额(已免运费)：
+          	    	<span class="money">￥2690.00</span>
+          	    </div>
+          	  </div>
+          	
+          	<!--结账按钮-->
+          	<div class="cart_btn">
+          	<span class="btn2">立即结账</span>
+          	 <span class="btn1">继续购物</span>
+          	 
+          	</div>
+          	<div style="clear: both;"></div>
+            <div class="bottom_xt"></div>
+	    
+	   </div>
+	</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../assets/jquery.myFocus.js"></script>
+		<link rel="stylesheet" href="../assets/jquery.myFocus.css">
+		<link href="../css/footer.css"  rel="stylesheet" type="text/css"/>
+		<link href="../css/head.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/index.css" rel="stylesheet" type="text/css"/>
+		
+		<script>
+			$(function(){
+				
+			$('<div/>').load('head.html',function(){
+				$(this).insertBefore('.myfocus');
+			});
+			$('<div/>').load('footer.html',function(){
+				$(this).insertAfter('.content_bg');
+			});
+			$('.myfocus').myFocus({
+	                imgs:['../img/banner_tp2.jpg','../img/banner_tp3.jpg']
+	        });
+            var $top=$('.top');
+            var $returnTop=$('.returnTop');
+            var $content_bg=$('.content_bg');
+            var scollTop;
+            $(window).on('scroll',function(){
+            	//获取滚动过的距离
+            	scollTop=$(window).scrollTop();
+            	if(scollTop>150){
+            		$top.css('display','block');
+            		$content_bg.animate({
+            			'margin-top':-200
+            		},2000);
+            	}else{
+            		$top.css('display','none');
+            		$content_bg.stop(true).animate({
+            			'margin-top':-30
+            		},1000);
+            	}
+            });
+			$top.on('click',function(){
+				console.log('点击了');
+				scrollTop = 0;
+				$('html,body').animate({scrollTop:scrollTop});
+			});
+            $(window).on('scroll',function(){
+            	var top2=($(window).height()-$returnTop.outerHeight())/2+$(window).scrollTop();
+            	$returnTop.stop().css('top',top2);
+            });
+			
+		})
+
+		</script>
+	</head>
+	<body>
+		<div class="myfocus"></div>
+	   
+       <div class="returnTop">
+       	 <img src="../img/wxtb.jpg" />
+       	 <span>
+       	 	<img class="top" src="../img/returnTop.jpg"/>
+       	 </span>
+       </div>
+       <!--主要内容-->
+       <div class="content_bg">
+       	<div class="bg_left"></div>
+       	<div class="bg_right"></div>
+       	  <div class="beautyMakeup bg_shadow">
+       	  	<div class="content_container">
+       	  		<div class="contentLeft">
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp2.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp3.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp4.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp5.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="bagList.html">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp6.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp7.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp8.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp9.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp10.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  			<a href="">
+       	  				<div class="theEvent">
+       	  					<div class="theEventImg">
+       	  						 <img src="../img/tp11.jpg" />
+       	  					</div>
+       	  					<div class="theEventIntroduction">
+                             <span class="theEventTitle">YA-MAN&nbsp;日本国民美容仪器</span>
+	                         <p><span>8.5</span>折起</p>
+                            </div>
+
+       	  				</div>
+       	  			</a>
+       	  		</div>
+       	  	</div>
+       	  </div>
+       	  	
+      </div>
+	</body>
+</html>

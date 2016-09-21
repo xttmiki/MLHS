@@ -1,0 +1,40 @@
+*{padding:0;margin:0 auto;}
+.register{position:relative;width:100%;height:auto;overflow:hidden;background-color:#dddddb;background:url(../img/bj.png)}
+.register_container{width:1000px;height:720px;overflow:hidden;margin:0 auto;background: url(../img/woman.jpg);}
+.register_logo{width:369px;margin-top:28px;height:36px;background: url(../img/logoTitle.png) no-repeat;margin-left:305px}
+.register_content{width:1000px;height:650px;position: relative;}
+.register_content .register_form{position:absolute;width:350px;height:524px;top:60px;left:450px;}
+.free_regsiter{margin-left:90px;width:260px;height:auto;overflow:hidden;padding-bottom:10px}
+.free_regsiter h2{font-size:16px;font-weight:bold;float:left}
+.free_regsiter span{float:right;margin-top:2px;font-size: 12px;}
+.free_regsiter span a{color: red;}
+.newPeople{width:260px;padding-left:90px;height:auto;overflow:hidden;text-align:left;padding-bottom:10px;_padding-bottom:0}
+.newPeople span{color:#db2726;font-size: 12px;}
+.register_info{width:350px;height:190px;}
+.register_info ul li,.login_info ul li{list-style: none;float: right;margin-bottom: 10px;}
+.register_info ul li span,.login_info ul li span{font-size: 12px;}
+.register_info ul li input,.login_info ul li input{width:253px;height:28px;}
+.register_info ul li .yzm,.register_info ul li .telYz,.login_info ul li .yzm{width:118px;height:28px;margin-right:10px}
+.register_info ul li .yzmPic,.login_info ul li .yzmPic{cursor: pointer;width:110px;height:28px;background: url(../img/yzm.jpg) no-repeat;}
+.register_info ul li .getTel{cursor: pointer;width:110px;height:28px;background: url(img/telYz.png);}
+.register_btn,.login_btn{width:253px;height:35px;float: right;}
+.register_btn a,.login_btn a{display:block;background-color:#db2725;width:253px;height:35px;text-align:center;line-height:35px;color:#FFF;font-size:14px}
+.register_btn a:hover,.login_btn a:hover{cursor: pointer;}
+.tk p{line-height:30px;height:30px;font-size: 10px;margin-left:94px;}
+.tk a{text-decoration: underline;}
+.tk a:hover{color: red;}
+.tk span{display:inline-block;width:12px;height:12px;background:black;}
+.xt{background-color:#a8aaab;width:350px;height:1px;margin-left:0;margin-top:20px}
+.ewm{margin-left:90px;margin-top:20px}
+.ewm img{float:left}
+.ewm p{line-height:20px;margin-top:16px;float:right;margin-right:18px;font-size: 10px;}
+/*登录*/
+.register_content .login_form{position:absolute;width:350px;height:160px;top:60px;left:450px;}
+.tk i{font-style:normal;text-decoration: underline;display:inline-block;float: right;}
+.tk i:hover{color:red;}
+.user_login{padding-top:12px;}
+.user_login span{font-size: 12px;margin-left:27px;margin-right:5px;}
+.weibo{width:20px;height:17px;background:url(img/icon_weibo.png) no-repeat;cursor:pointer;display:inline-block}
+.zhifubao{background:url(img/icon_zhifubao.png);width:44px;height:17px;cursor:pointer;display:inline-block;margin-left:25px;}
+.weibo:hover{background: url(img/icon_weibo_03.png);}
+.zhifubao:hover{background: url(img/icon_zhifubao_03.png);}

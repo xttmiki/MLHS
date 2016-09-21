@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.12.0.js"></script>
+		<link href="../css/footer.css"  rel="stylesheet" type="text/css"/>
+		<link href="../css/register.css" rel="stylesheet" type="text/css"/>
+	    <script>
+	    	$(function(){
+	    		$('<div/>').load('footer2.html',function(){
+				$(this).insertAfter('.register');
+			  });
+	    	});
+	    </script>
+	</head>
+	<body>
+		<div class="register">
+			 
+			 <div class="register_container">
+			 	 <div class="register_logo"></div>
+                 <div class="register_content">
+                 	<div class="register_form">
+                 	   <div class="free_regsiter">
+                        <h2>免费注册</h2>
+                        <span data-spm="2028705">已注册？<a href="login.html">登录</a></span>
+                       </div>
+                       <div class="newPeople"><p><span style="color:red">新客专享 80元现金券＋2次免运</span><br/></p></div>
+                       <div class="register_info">
+                       	  <ul>
+                       	  	<li>
+                       	  		<span>帐户名：</span>
+                       	  		<input name="userAccount" id="userAccount" type="text" placeholder="手机号/邮箱"/>
+                       	  	</li>
+                       	  	<li>
+                       	  		<span>密码：</span>
+                       	  		<input name="userPwd" id="userPwd" type="password" value="" placeholder="请输入6-20个字符"/>
+                       	  	</li>
+                       	  	<li>
+                       	  		<span>确认密码：</span>
+                       	  		<input name="againPwd" id="againPwd" type="password" value=""/>
+                       	  	</li>
+                       	  	<li>
+                       	  		<span>验证码：</span>
+                       	  		<input name="yzm" id="yzm" class="yzm" type="text"/>
+                       	  		<input name="yzmPic" id="yzmPic" class="yzmPic"/>
+                       	  	</li>
+                       	  	<li>
+                       	  		<span>短信验证码：</span>
+                       	  		<input name="telYz"  id="telYz" class="telYz" type="text"/>
+                       	  		<input class="getTel"/>
+                       	  	</li>
+                       	  </ul>
+                       </div>
+                       <div class="register_btn">
+                       	 <a>立即注册</a>
+                       </div>
+                       <div style="clear: both;"></div>
+                       <div class="tk">
+	                       <p>
+	                       	点击立即注册表示同意魅力惠
+	                       	<a>使用条款</a>
+	                       </p>
+	                       <p>
+	                       	 <span></span>
+	                       	 您将收到魅力惠每日最新上线邮件
+	                       </p>
+	                   </div>
+	                   <div style="clear: both;"></div>
+	                   <div class="xt"></div>
+	                   <div class="ewm">
+	                   	 <img src="../css/img/wechat.jpg" />
+	                   	  <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+	                   </div>
+                 	</div>
+                 </div>
+
+			 	
+			 </div>
+			 
+			
+			 
+		</div>
+		  
+	</body>
+</html>
