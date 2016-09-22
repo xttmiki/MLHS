@@ -79,6 +79,42 @@ $(function(){
      //倒计时
      $('.djs').daojishi({endTime:'2016/12/22'});
 	
+	//购买商品数量
 	
+	var $quantity=$('#quantity');
+	var count=$quantity.val();
+	$('.add').click(function(){
+		count++;
+		$quantity.val(count);
+	});
+	$('.reduce').click(function(){
+		if(count>=2){
+			count--;
+			$quantity.val(count);
+		}else{
+			count=1;
+		}
+	});
 	
+	//购买商品
+	$('.buy_btn').on('click',function(){
+		var $brand=$('.detail_logo').html().trim();//获取商标
+		var $name=$('.name').html();//获取商品名称
+		var $price=$('.xj').html();//获取商品价格
+		var $img=$('.choose_img').find('img').attr('src');//获取图片路径
+		var $quantity=$('#quantity').val();//获取购买数量
+		//console.log($brand,$name,$xj,$img,$quantity);
+		var proObj={};
+		proObj.brand=$brand;
+		proObj.name=$name;
+		proObj.price=$price;
+		proObj.img=$img;
+		proObj.quantity=$quantity;
+		pro=JSON.stringify(proObj);
+		console.log(pro);
+		addCookie('prolist', pro, 7);
+		var getPro=JSON.parse(getCookie("prolist"));
+		console.log(getPro);
+		
+	})
 })

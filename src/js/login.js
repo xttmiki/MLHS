@@ -4,8 +4,9 @@ $(function(){
 
 	$('.login_btn').click(function(){
 		
-	        var auto_login=$('#auto_login').prop('checked');
-	        console.log(auto_login);
+	        var isCheck=$('#auto_login').prop('checked');//判断是否勾选自动登录复选框
+	        if(isCheck)
+	       {
 		    var userAccount=$('#userAccount').val();
 		    var userPwd=$('#userPwd').val();
 		   
@@ -17,7 +18,7 @@ $(function(){
 		    obj=JSON.stringify(obj);
 		    addCookie('user',obj,7);
 	         //把json字符串转成json对象
-	           
+	       }    
 	});
    var $userAccount=$('#userAccount');
    var $userPwd=$('#userPwd');
