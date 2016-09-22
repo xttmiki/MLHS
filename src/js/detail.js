@@ -96,6 +96,8 @@ $(function(){
 		}
 	});
 	
+	
+	var getPro = getCookie("prolist");
 	//购买商品
 	$('.buy_btn').on('click',function(){
 		var $brand=$('.detail_logo').html().trim();//获取商标
@@ -110,11 +112,94 @@ $(function(){
 		proObj.price=$price;
 		proObj.img=$img;
 		proObj.quantity=$quantity;
-		pro=JSON.stringify(proObj);
+		
+		//现取cookie
+		var data=getPro;
+		if(data){
+			data = JSON.parse(data);
+		}else{
+			data = [];
+		}
+		data.push(proObj);
+		
+		var pro=JSON.stringify(data);
 		console.log(pro);
 		addCookie('prolist', pro, 7);
-		var getPro=JSON.parse(getCookie("prolist"));
-		console.log(getPro);
+		//getPro=JSON.parse(getCookie("prolist"));
+		//console.log(getPro);
 		
-	})
+	});
+	
+	/*
+	<ul>
+  	    <li style="width:380px;height:107px" class="content_left">
+  	      <a>
+  	       <img src="../img/bag5.jpg">
+  	      </a>
+  	      <div class="pro_title_info">
+  	      	<strong>Tory Burch</strong>
+  	      	<span>深蓝色花朵珠片装饰手提肩包</span>
+  	      </div>
+  	    </li>
+  	    <li>¥ 2690.00</li>
+  	    <li>
+         	<div class="number_choose">
+                <span class="number_reduce">-</span>
+                <span class="quantity_number"><input readonly="readonly" value="1"></span>
+                <span class="number_increase">+</span>
+            </div>
+    	</li>
+    	<li></li>
+    	<li class="xiaoji">¥ 2690.00</li>
+    	<li><img src="../css/img/delete.png" class="delete"/></li>
+    </ul>*/
+   //购物车
+   var $shop_content=$('.shop_content');
+   if(getPro){
+   	$.each(JSON.parse(getPro),function(idx,item){
+	   	var totalMoney=item.quantity*item.price;
+	   	//console.log(arguments);
+	   	var $ul=$('<ul/>');
+	    var $li1=$('<li/>').css({'width':380,'height':107}).addClass('content_left');
+	    var $a=$('<a/>');
+	    $a.appendTo($li1);
+	    $('<img/>').attr("src",item.img).appendTo($a);
+	   	var $div1=$('<div/>').addClass('pro_title_info');
+	    $('<strong/>').html(item.brand).appendTo($div1);
+	    $('<span/>').html(item.name).appendTo($div1);
+	    $div1.appendTo($li1);
+	    $li1.appendTo($ul);
+	    
+	    var $li2=$('<li/>').html(item.price).appendTo($ul);
+	   	
+	   	var $li3=$('<li/>');
+	   	var $div2=$('<div/>').addClass('number_choose');
+	   	var $span1=$('<span/>').addClass('number_reduce').html('-');
+	   	var $span2=$('<span/>').addClass('quantity_number');
+	    $('<input/>').attr('value',item.quantity).appendTo($span2);
+	   	var $span3=$('<span/>').addClass('number_increase').html('+');
+	   	$span1.appendTo($div2);
+	   	$span2.appendTo($div2);
+	   	$span3.appendTo($div2);
+	   	$div2.appendTo($li3);
+	   	$li3.appendTo($ul);
+	   	
+	   	$('<li/>').appendTo($ul);//第四个li
+	   	
+	   	
+	   	var $li5=$('<li/>').html(totalMoney);
+	   	$li5.appendTo($ul);
+	   	
+	   	var $li6=$('<li/>');
+	   	$('<img/>').attr('src','../css/img/delete.png').addClass('delete').appendTo($li6);
+	    $li6.appendTo($ul);
+	    $ul.appendTo($shop_content);
+	  
+	   });
+   }
+   
+   
+   
+   
+   
 })
