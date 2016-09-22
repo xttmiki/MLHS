@@ -17,12 +17,12 @@ $(function(){
 		    //把json对象转换成json字符串
 		    obj=JSON.stringify(obj);
 		    addCookie('user',obj,7);
-	         //把json字符串转成json对象
+	         
 	       }    
 	});
    var $userAccount=$('#userAccount');
    var $userPwd=$('#userPwd');
-   var userObj=JSON.parse(getCookie("user"));
+   var userObj=JSON.parse(getCookie("user"));//把json字符串转成json对象
    if(userObj.user&&userObj.pwd){
    	 $userAccount.val(userObj.user);
    	 $userPwd.val(userObj.pwd);

@@ -97,7 +97,7 @@ $(function(){
 	});
 	
 	
-	var getPro = getCookie("prolist");
+	
 	//购买商品
 	$('.buy_btn').on('click',function(){
 		var $brand=$('.detail_logo').html().trim();//获取商标
@@ -114,7 +114,7 @@ $(function(){
 		proObj.quantity=$quantity;
 		
 		//现取cookie
-		var data=getPro;
+		var data= getCookie("prolist");
 		if(data){
 			data = JSON.parse(data);
 		}else{
@@ -153,11 +153,15 @@ $(function(){
     	<li class="xiaoji">¥ 2690.00</li>
     	<li><img src="../css/img/delete.png" class="delete"/></li>
     </ul>*/
-   //购物车
+   //把商品加入购物车
    var $shop_content=$('.shop_content');
+   var getPro = getCookie("prolist");
+   console.log(getPro)
+   var totalMoney=0;//计算总价格
    if(getPro){
    	$.each(JSON.parse(getPro),function(idx,item){
-	   	var totalMoney=item.quantity*item.price;
+	   	var money=item.quantity*2690;
+	   	totalMoney+=money;
 	   	//console.log(arguments);
 	   	var $ul=$('<ul/>');
 	    var $li1=$('<li/>').css({'width':380,'height':107}).addClass('content_left');
@@ -187,7 +191,7 @@ $(function(){
 	   	$('<li/>').appendTo($ul);//第四个li
 	   	
 	   	
-	   	var $li5=$('<li/>').html(totalMoney);
+	   	var $li5=$('<li/>').html(money);
 	   	$li5.appendTo($ul);
 	   	
 	   	var $li6=$('<li/>');
@@ -196,10 +200,22 @@ $(function(){
 	    $ul.appendTo($shop_content);
 	  
 	   });
+	   $('.money').html(totalMoney);
    }
    
+   //把商品从购物车中移除
    
-   
+   $shop_content.on('click','.delete',function(){
+   	 var idx=$(this).parent().parent().index();
+   	 $(this).closest('ul').remove();
+   	 var data = JSON.parse(getCookie("prolist"));
+   	 data.splice(idx,1);
+   	 var pro=JSON.stringify(data);
+	 addCookie('prolist',pro,7);
+   	 
+   	 
+   	 //console.log(idx,deletePro);
+   });
    
    
 })
