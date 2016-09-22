@@ -25,7 +25,7 @@ $(function(){
 		       });
 	    //倒计时
 	   
-	    $('.down_time').daojishi({endTime:'2016/9/22'});
+	    $('.down_time').daojishi({endTime:'2016/12/22'});
 		// 全局配置
 			function aJax(){
 				$.ajax({

@@ -74,3 +74,4 @@ function binding(oElem, eventName, fn)
 		oElem.addEventListener(eventName, fn, false);
 	}
 }
+

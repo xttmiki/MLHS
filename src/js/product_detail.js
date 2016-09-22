@@ -77,6 +77,8 @@ $(function(){
      	 $canvas.css('display','none')
      })
      //倒计时
-     $('.djs').daojishi({endTime:'2016/9/22'});
-
+     $('.djs').daojishi({endTime:'2016/12/22'});
+	
+	
+	
 })
